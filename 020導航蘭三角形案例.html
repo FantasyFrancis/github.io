@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zn_ch">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0;
+        }
+        .box
+        {
+            width: 300px;
+            margin: 0 auto;
+        }
+        ul
+        {
+            list-style: none;
+        }
+        .box>li
+        {
+            float: left;
+            width: 148px;
+            text-align: center;
+            border: 1px solid blue;
+            background: blue;
+            color: #fff;
+            line-height: 40px;
+        }
+        .box>li:hover
+        {
+            background: lightskyblue;
+        }
+        .box>li ul
+        {
+            display: none;
+            background: white;
+            color: #000;
+        }
+        .box>li:hover ul
+        {
+            display: block;
+        }
+        .box>li li:hover
+        {
+            color: blue;
+        }
+        span
+        {
+            width: 0;
+            height: 0;
+            display: inline-block;
+            border: 5px solid transparent;
+            border-top:5px solid white;
+            position: relative;
+            top: 2.5px;
+        }
+        .box>li:hover span
+        {
+            border: 5px solid transparent;
+            border-bottom:5px solid white;
+            top: -2.5px;
+        }
+        
+    </style>
+</head>
+<body>
+    <ul class="box">
+        <li>影片教學 <span></span>
+            <ul>
+                <li>全部教學</li>
+                <li>HTML5教學</li>
+                <li>JAVA教學</li>
+                <li>python教學</li>
+            </ul>
+        </li>
+        <li>認證考試
+            <ul>
+                <li>pmp</li>
+                <li>紅帽</li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>
